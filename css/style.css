@@ -104,6 +104,8 @@ h1 span:nth-child(1) {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	padding: 120px 0 140px 0;
+	background-color: #f8fafa;
 }
 
 .about-us__header {
@@ -112,7 +114,7 @@ h1 span:nth-child(1) {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	padding: 120px 0 110px 0;
+	padding: 0px 0 110px 0;
 }
 
 .about-us__header h2 {
@@ -191,13 +193,28 @@ footer {
 
 @media (max-width: 1200px) {
 	header {
-		padding: 50px 130px;
+		padding: 50px 50px;
 	}
 
 	h1 {
 		margin: 50px 0;
 	}
 
+	.about-us {
+		padding: 50px;
+	}
+
+	.about-us__header {
+		padding: 50px 0;
+	}
+
+	.about-us__info {
+		padding: 0 50px;
+	}
+
+	article {
+		padding: 0 10px;
+	}
 }
 
 @media (max-width: 992px) {
@@ -218,11 +235,48 @@ footer {
 	.header__glass {
 		display: none
 	}
+
+	.about-us {
+		padding: 20px 0;
+	}
+
+	.about-us__header {
+		padding: 20px 0;
+	}
+
+	.about-us__info {
+		padding: 0 20px;
+	}
+
+	.about-us__img img {
+		width: 100%;
+	}
+
+	article {
+		padding: 0 20px;
+	}
 }
 
 @media (max-width: 768px) {
 	h1 {
 		font-size: 2.3rem;
+	}
+
+	.about-us__header h2 {
+		font-size: 2rem;
+		margin-bottom: 10px;
+	}
+	
+	.about-us__header p {
+		font-size: 1rem;
+	}
+
+	article h4 {
+		font-size: 1rem;
+	}
+	
+	article p {
+		font-size: 1rem;
 	}
 }
 
@@ -247,5 +301,31 @@ footer {
 		width: 150px;
 		height: 25px;
 		font-size: 1rem;
+	}
+
+	.about-us {
+		padding: 20px 0;
+	}
+
+	.about-us__header {
+		padding: 0;
+		text-align: center;
+	}
+
+	.about-us__info {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 20px;
+	}
+
+	.about-us__img img {
+		width: 220%;
+		margin: 20px 0;
+	}
+
+	article {
+		width: 100%;
+		padding: 0 20px;
 	}
 }
