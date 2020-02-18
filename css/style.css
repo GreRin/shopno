@@ -98,17 +98,17 @@ h1 span:nth-child(1) {
 }
 
 /* Section "ABOUT US" */
-.about-us {
+.section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	padding: 120px 0 140px 0;
+	padding: 120px 0 135px 0;
 	background-color: #f8fafa;
 }
 
-.about-us__header {
+.section__header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -117,14 +117,14 @@ h1 span:nth-child(1) {
 	padding: 0px 0 110px 0;
 }
 
-.about-us__header h2 {
+.section__header h2 {
 	font-size: 4rem;
 	text-transform: uppercase;
 	font-weight: 700;
 	line-height: 1.2;
 }
 
-.about-us__header p {
+.section__header p {
 	font-size: 2rem;
 	font-family: 'Merriweather Sans', sans-serif;
 	font-weight: 400;
@@ -132,7 +132,7 @@ h1 span:nth-child(1) {
 	letter-spacing: 0.5px;
 }
 
-.about-us__info {
+.section__info {
 	display: inline-flex;
 	justify-content: space-around;
 	align-items: flex-start;
@@ -140,7 +140,7 @@ h1 span:nth-child(1) {
 	padding: 29px 131px;
 }
 
-.about-us__img {
+.section__img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -181,6 +181,35 @@ article h4:nth-child(1) {
 	letter-spacing: 2px;
 }
 
+/* Featured Works */
+.featured-works {
+	padding: 120px 0 140px 0;
+}
+
+.featured-works .section__header {
+	padding-bottom: 104px;
+}
+
+.featured-works p {
+	letter-spacing: 0px;
+}
+
+.featured-works .section__img {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.row {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.row img {
+	margin: 7px;
+}
+
 /* Footer */
 footer {
 	display: flex;
@@ -200,15 +229,15 @@ footer {
 		margin: 50px 0;
 	}
 
-	.about-us {
+	.section {
 		padding: 50px;
 	}
 
-	.about-us__header {
+	.section__header {
 		padding: 50px 0;
 	}
 
-	.about-us__info {
+	.section__info {
 		padding: 0 50px;
 	}
 
@@ -236,19 +265,19 @@ footer {
 		display: none
 	}
 
-	.about-us {
+	.section {
 		padding: 20px 0;
 	}
 
-	.about-us__header {
+	.section__header {
 		padding: 20px 0;
 	}
 
-	.about-us__info {
+	.section__info {
 		padding: 0 20px;
 	}
 
-	.about-us__img img {
+	.section__img img {
 		width: 100%;
 	}
 
@@ -262,12 +291,12 @@ footer {
 		font-size: 2.3rem;
 	}
 
-	.about-us__header h2 {
+	.section__header h2 {
 		font-size: 2rem;
 		margin-bottom: 10px;
 	}
 	
-	.about-us__header p {
+	.section__header p {
 		font-size: 1rem;
 	}
 
@@ -303,23 +332,23 @@ footer {
 		font-size: 1rem;
 	}
 
-	.about-us {
+	.section {
 		padding: 20px 0;
 	}
 
-	.about-us__header {
+	.section__header {
 		padding: 0;
 		text-align: center;
 	}
 
-	.about-us__info {
+	.section__info {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		padding: 0 20px;
 	}
 
-	.about-us__img img {
+	.section__img img {
 		width: 220%;
 		margin: 20px 0;
 	}
