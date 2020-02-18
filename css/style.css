@@ -17,14 +17,14 @@ header {
 	padding: 63px 148px 110px 148px;
 }
 
-.header-logo-img {
+.header__logo-img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-self: flex-start;
 }
 
-.header-glass {
+.header__glass-hidden {
 	display: none;
 }
 
@@ -91,7 +91,7 @@ h1 span:nth-child(1) {
 	border-radius: 3px;
 }
 
-.glass {
+.header__glass {
 	align-self: flex-end;
 	margin-right: 95px;
 	transform: translateY(-25px);
@@ -119,20 +119,21 @@ footer {
 }
 
 @media (max-width: 992px) {
-	.header-logo-img {
+	.header__logo-img {
 		display: inline-flex;
 		justify-content: space-between;
 		width: 100%;
 	}
-	.header-glass {
+	.header__glass-hidden {
 		display: flex;
+		width: 50px;
 	}
 
 	h1 {
 		font-size: 3.3rem;
 	}
 
-	.glass {
+	.header__glass {
 		display: none
 	}
 }
@@ -148,8 +149,8 @@ footer {
 		padding: 20px;
 	}
 
-	.header-glass {
-		width: 10%;
+	.header__glass-hidden {
+		width: 40px;
 	}
 
 	h1 {
