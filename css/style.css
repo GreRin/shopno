@@ -78,7 +78,7 @@ h1 span:nth-child(1) {
 	z-index: 5;
 }
 
-.btn-contact-us {
+.header__btn-contact-us {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -95,6 +95,88 @@ h1 span:nth-child(1) {
 	align-self: flex-end;
 	margin-right: 95px;
 	transform: translateY(-25px);
+}
+
+/* Section "ABOUT US" */
+.about-us {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.about-us__header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 120px 0 110px 0;
+}
+
+.about-us__header h2 {
+	font-size: 4rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.about-us__header p {
+	font-size: 2rem;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.about-us__info {
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	height:100%;
+	padding: 29px 131px;
+}
+
+.about-us__img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+
+article {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 50%;
+	padding: 0 60px;
+}
+
+article h4 {
+	font-size: 2rem;
+	font-family: 'Merriweather Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+article p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+	letter-spacing: 0.75px;
+	line-height: 1.8;
+}
+
+article p:nth-child(2) {
+	margin: 15px 0;
+}
+
+article p:nth-child(3) {
+	margin: 10px 0;
+}
+
+article h4:nth-child(1) {
+	letter-spacing: 2px;
 }
 
 /* Footer */
@@ -161,7 +243,7 @@ footer {
 		align-self: center;
 	}
 
-	.btn-contact-us {
+	.header__btn-contact-us {
 		width: 150px;
 		height: 25px;
 		font-size: 1rem;
