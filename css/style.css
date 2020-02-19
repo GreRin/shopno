@@ -40,7 +40,7 @@ h1 {
 	text-align: center;
 	margin: 192px 0 133px 0;
 	line-height: 1.4;
-	letter-spacing: 3px;
+	letter-spacing: 5px;
 	color: #505050;
 	text-shadow: 8px 8px 5px #cfcfcf;
 }
@@ -97,6 +97,14 @@ h1 span:nth-child(1) {
 	cursor: pointer;
 	outline: none;
 	text-decoration: none;
+	-webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+
+.header__btn-contact-us:hover {
+	background-color: #aaaaaa;
 }
 
 .header__glass {
@@ -264,6 +272,11 @@ article h4:nth-last-child(2) {
 	padding: 160px 150px 125px 150px;
 	background: url(../img/background-contacts.jpg) center center no-repeat;
 }
+
+.contacts h2 {
+	display: none;
+}
+
 .section__contacts {
 	display: flex;
 	justify-content: center;
@@ -320,7 +333,7 @@ input::placeholder, textarea::placeholder {
 	border: none;
 	border-radius: 4px;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 1.8rem;
 	text-transform: uppercase;
 	color: #214744;
@@ -328,6 +341,14 @@ input::placeholder, textarea::placeholder {
 	cursor: pointer;
 	outline: none;
 	text-decoration: none;
+	-webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+
+.form-btn:hover {
+	background-color: #b3f3ee;
 }
 
 .form-map {
@@ -387,6 +408,10 @@ footer h2 {
 	background-color: #262b2e;
 	margin: 5px 7px;
 	border-radius: 0 !important;
+	-webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
 }
 
 .fa-facebook-square:hover, 
