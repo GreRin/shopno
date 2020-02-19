@@ -104,7 +104,7 @@ h1 span:nth-child(1) {
 }
 
 .header__btn-contact-us:hover {
-	background-color: #aaaaaa;
+	opacity: 0.4;
 }
 
 .header__glass {
@@ -353,7 +353,7 @@ input::placeholder, textarea::placeholder {
 
 .form-map {
 	flex-basis: 45%;
-	padding: 30px 23px 13px 23px;
+	padding: 30px 23px 19px 23px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.5rem;
 	color: #fbfbfb; 

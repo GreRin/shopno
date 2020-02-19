@@ -10,6 +10,20 @@
 		<link rel='stylesheet' type='text/css' href='./css/style.css'>
 		<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans/Montserrat/Raleway&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<!-- Yandex map -->
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=3d5e7abf-1810-40f6-859c-727d52b32979&lang=ru_RU&onload=init"
+			type="text/javascript">
+		</script>
+		<script type="text/javascript">
+			function init (ymaps) {
+				var myMap = new ymaps.Map("YMapsID", {
+						center: [53.890839, 27.537217],
+						zoom: 15
+				});
+				let placemark = new ymaps.Placemark([53.890839, 27.537217], { iconCaption: 'Imaguru' });
+				myMap.geoObjects.add(placemark);
+			}
+		</script>
 	</head>
 	<body class="wrapper-content">
 		<header>
@@ -40,7 +54,6 @@
 					</article>
 				</div>
 			</section>
-
 			<section class="section featured-works">
 				<div class="section__header">
 					<h2>featured works</h2>
@@ -58,9 +71,7 @@
 						<img src="./img/health-tea.jpg" alt="health-tea">
 					</div>
 				</div>
-
 			</section>
-
 			<section class="section small-team">
 				<div class="section__header">
 					<h2>small team</h2>
@@ -79,7 +90,6 @@
 					</div>
 				</div>
 			</section>
-
 			<section class="section contacts">
 				<h2>contacts</h2>
 				<div class="section__contacts">
@@ -98,7 +108,8 @@
 						<p>Web:www.designagency.net</p>
 						<p>E-mail:info@designagency.net</p>
 						<div class="map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.7362964339795!2d27.690318516038246!3d53.95419153670757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc937833703c5%3A0x2f762aea79dae878!2z0YPQuy4g0KPRgNGD0YfRgdC60LDRjyAxOSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1547016301519" ></iframe>
+							<div id="YMapsID" style="width: 100%; height: 225px;"></div>  
+							<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.7362964339795!2d27.690318516038246!3d53.95419153670757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc937833703c5%3A0x2f762aea79dae878!2z0YPQuy4g0KPRgNGD0YfRgdC60LDRjyAxOSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1547016301519" ></iframe> -->
 						</div>
 					</form>
 				</div>
