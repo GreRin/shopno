@@ -11,10 +11,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Montserrat|Raleway&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<!-- Yandex map -->
-		<script src="https://api-maps.yandex.ru/2.1/?apikey=3d5e7abf-1810-40f6-859c-727d52b32979&lang=ru_RU&onload=init"
-			type="text/javascript">
-		</script>
-		<script type="text/javascript">
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=3d5e7abf-1810-40f6-859c-727d52b32979&lang=ru_RU&onload=init"></script>
+		<script>
 			function init (ymaps) {
 				var myMap = new ymaps.Map("YMapsID", {
 						center: [53.890839, 27.537217],
@@ -109,7 +107,7 @@
 						<input class="form-input" id="name" type="text" placeholder="Name*">
 						<input class="form-input" id="phone" type="text" placeholder="Subject*">
 						<input class="form-input" id="email" type="text" placeholder="E-mail*">
-						<textarea class="form-textarea" id="message" rows="7" placeholder="Message*"></textarea>
+						<textarea class="form-textarea" id="message" rows="4" placeholder="Message*"></textarea>
 						<button class="form-btn button" type="submit">send message</button>
 					</form>
 					<form class="form-map" action="#">

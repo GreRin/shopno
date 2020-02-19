@@ -40,7 +40,7 @@ h1 {
 	text-align: center;
 	margin: 192px 0 133px 0;
 	line-height: 1.4;
-	letter-spacing: 5px;
+	letter-spacing: 2.5px;
 	color: #505050;
 	text-shadow: 8px 8px 5px #cfcfcf;
 }
@@ -306,6 +306,9 @@ input {
 	background: transparent;
 	outline: none;
 	text-decoration: none;
+	background: transparent;
+	color: #fbfbfb;
+	font-size: 1.8rem;
 }
 
 textarea {
@@ -315,15 +318,22 @@ textarea {
 	background: transparent;
 	outline: none;
 	text-decoration: none;
+	color: #fbfbfb;
+	font-size: 1.8rem;
 }
-
 
 input::placeholder, textarea::placeholder {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.4rem;
 	padding: 0 0 4px 5px;
-	color: #fbfbfb; 
+	color: #fbfbfb;
+	background: transparent;
 } 
+
+input:-webkit-autofill {
+	-webkit-box-shadow: inset 0 0 0 50px rgba(73, 88, 98, 0.5); /* цвет вашего фона */
+	-webkit-text-fill-color: #fbfbfb; /* цвет текста */
+}
 
 .form-textarea {
 	margin-bottom: 10px;
