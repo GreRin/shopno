@@ -508,6 +508,30 @@ footer h2 {
 	article p {
 		font-size: 1rem;
 	}
+
+	.contacts {
+		padding: 0 !important;
+	}
+
+	.section__contacts {
+		flex-direction: column;
+	}
+
+	.form-btn {
+		align-self: center;
+	}
+
+	.form-map {
+		padding-top: 0;
+	}
+
+	footer {
+		height: 150px;
+	}
+
+	.social {
+		margin-bottom: 0;
+	}
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
