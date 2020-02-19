@@ -8,7 +8,7 @@
 		<title>Shopno</title>
 		<link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
 		<link rel='stylesheet' type='text/css' href='./css/style.css'>
-		<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans/Montserrat/Raleway&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Montserrat|Raleway&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<!-- Yandex map -->
 		<script src="https://api-maps.yandex.ru/2.1/?apikey=3d5e7abf-1810-40f6-859c-727d52b32979&lang=ru_RU&onload=init"
@@ -61,14 +61,26 @@
 				</div>
 				<div class="section__img">
 					<div class="row row-column">
-						<img src="./img/ice-cream.jpg" alt="ice-cream">
-						<img src="./img/soap.jpg" alt="soap">
-						<img src="./img/ceramic-bottle.jpg" alt="ceramic-bottle">
+						<a class="image-popup-no-margins" href="./img/ice-cream.jpg">
+							<img src="./img/ice-cream.jpg" alt="ice-cream">
+						</a>
+						<a class="image-popup-no-margins" href="./img/soap.jpg">
+							<img src="./img/soap.jpg" alt="soap">
+						</a>
+						<a class="image-popup-no-margins" href="./img/ceramic-bottle.jpg">
+							<img src="./img/ceramic-bottle.jpg" alt="ceramic-bottle">
+						</a>
 					</div>
 					<div class="row row-column">
-						<img src="./img/book.jpg" alt="book">
-						<img src="./img/euro.jpg" alt="euro">
-						<img src="./img/health-tea.jpg" alt="health-tea">
+						<a class="image-popup-no-margins" href="./img/book.jpg">
+							<img src="./img/book.jpg" alt="book">
+						</a>
+						<a class="image-popup-no-margins" href="./img/euro.jpg">
+							<img src="./img/euro.jpg" alt="euro">
+						</a>
+						<a class="image-popup-no-margins" href="./img/health-tea.jpg">
+							<img src="./img/health-tea.jpg" alt="health-tea">
+						</a>
 					</div>
 				</div>
 			</section>
@@ -109,7 +121,6 @@
 						<p>E-mail:info@designagency.net</p>
 						<div class="map">
 							<div id="YMapsID" style="width: 100%; height: 225px;"></div>  
-							<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.7362964339795!2d27.690318516038246!3d53.95419153670757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc937833703c5%3A0x2f762aea79dae878!2z0YPQuy4g0KPRgNGD0YfRgdC60LDRjyAxOSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1547016301519" ></iframe> -->
 						</div>
 					</form>
 				</div>
@@ -124,5 +135,30 @@
 				<a class="dribbble" href="#"><i class="fab fa-dribbble-square"></i></a>
 			</div>
 		</footer>
+
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="./css/magnific-popup.css">
+		<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!-- Magnific Popup core JS file -->
+		<script src="./js/jquery.magnific-popup.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.image-popup-no-margins').magnificPopup({
+					type: 'image',
+					closeOnContentClick: true,
+					closeBtnInside: false,
+					fixedContentPos: true,
+					mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+					image: {
+						verticalFit: true
+					},
+					zoom: {
+						enabled: true,
+						duration: 300 // don't foget to change the duration also in CSS
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
