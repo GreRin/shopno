@@ -370,7 +370,6 @@ input {
 	background: transparent;
 	outline: none;
 	text-decoration: none;
-	background: transparent;
 	color: #fbfbfb;
 	font-size: 1.8rem;
 }
@@ -686,6 +685,14 @@ footer h2 {
 		text-align: center;
 	}
 
+	article h4 {
+		margin-top: 20px;
+	}
+
+	article p {
+		margin-bottom: 20px;
+	}
+
 	.featured-works .section__img {
 		flex-direction: column;
 	}
@@ -704,7 +711,7 @@ footer h2 {
 
 	.section__img img {
 		width: 100%;
-		margin-bottom: 20px;
+		margin: 0;
 	}
 
 	article {
