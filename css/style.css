@@ -294,7 +294,7 @@ article h4:nth-last-child(2) {
 	opacity: 0;
 }
 
-.description:hover {
+.card-container:hover .description {
 	transition: 1s;
 	opacity: 1;
 }
